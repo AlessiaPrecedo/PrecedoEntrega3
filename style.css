@@ -10,7 +10,7 @@ padding: 5%;
 background-color: rgb(228, 222, 227);
 }
 
-.BannerCitoVesti .ofertita .banner_cito .preguntas{
+.BannerCitoVesti .ofertita .banner_cito{
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: 1fr;
@@ -21,10 +21,10 @@ height: 100%;
 object-fit: cover;
 }
 
-.ofertita div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.ofertita div img{
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .banner_cito div img{
     width: 100%;
@@ -32,10 +32,10 @@ object-fit: cover;
     object-fit: cover;  
 
 }
-.preguntas div img{
+.preguntas img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
 }
 
 
