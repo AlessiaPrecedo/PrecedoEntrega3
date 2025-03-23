@@ -72,6 +72,7 @@ main .PregFrec{
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:repeat(6, 1fr);
+justify-items: center;
 }
 .PregFrec div{
 width: 380px;
