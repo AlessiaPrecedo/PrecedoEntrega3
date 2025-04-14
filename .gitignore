@@ -1,0 +1,13 @@
+# Ignorar archivos CSS compilados
+*.css
+*.css.map
+
+# Carpetas de sistema
+.DS_Store
+Thumbs.db
+
+# Node modules 
+node_modules/
+
+# Carpeta de caché de SASS 
+.sass-cache/

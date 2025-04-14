@@ -1,78 +1,20 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 3 | @use'/Estilo.scss';
+ *   | ^^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass\_main.scss 3:1  @import
+ *   Estilo.scss 2:8      root stylesheet */
 
-/****banner****/
-.carousel-inner{
-padding: 5%;
-background-color: rgb(228, 222, 227);
-}
-
-.BannerCitoVesti .ofertita .banner_cito{
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr;
-}
-.BannerCitoVesti div img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-
-.ofertita div img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-.banner_cito div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  
-
-}
-.preguntas img{
-    width: 100%;
-    height: auto;
+body::before {
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+    "Droid Sans Mono", monospace, monospace;
+    white-space: pre;
     display: block;
-}
-
-
-/******************Estilos-Main*********************/
-
-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20%, 60%, 20%;
-}
-main section h3, h4{
-    display: block;
-text-align: center;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 1.5em;
-margin: 5px;
-}
-main section .box{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 12fr;
-    column-gap: 0;
-    row-gap: 10px;
-    padding: 3%;
-}
-.box div{
-    background-color: rgb(243, 206, 206);
-    border: 1px;
-    padding: 10px;
-    text-align: center;
-}
-
-main .PregFrec{
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows:repeat(6, 1fr);
-justify-items: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+    content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @use'/Estilo.scss';\d\a   \2502  ^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\_main.scss 3:1  @import\a   Estilo.scss 2:8      root stylesheet";
 }
 .PregFrec div{
 width: 380px;

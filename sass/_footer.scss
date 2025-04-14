@@ -1,0 +1,50 @@
+@use'mixin';
+@use'extend';
+@use'variable';
+
+
+
+
+
+footer{
+    @extend .FooterCito;
+    section{
+        ul{
+            @include U-L(flex, column, 3px, center, 3%, 1.5em, none, none);
+        }
+        ul{
+            li{
+                a{
+                    border-style: $groove;
+                    background-color: $background;
+                    text-decoration: $decoration;
+                    color: $color;
+                }
+            }
+        }
+        }
+        section{
+                div{
+                    h3{
+                        font-size: $h-tres;
+                    }
+                }
+
+            div{
+                @include sec-div(flex, row, 10px, center, 5px);
+            }
+        }
+        .ubi{
+            @include sec-div(flex, column, 5px, center, 5px);
+            div{
+                h4{
+                    font-size: $h-tres;
+                }
+
+                }
+                
+            }
+        }
+
+
+

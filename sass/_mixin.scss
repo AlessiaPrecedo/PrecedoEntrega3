@@ -1,0 +1,57 @@
+@mixin medidas($width, $height, $display){
+    width: $width;
+    height: $height;
+    display: $display;
+}
+@mixin box($display, $column, $rows, $column-gap, $row-gap, $padding){
+    display: $display;
+    grid-template-columns: $column;
+    grid-template-rows: $rows;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+    padding: $padding;
+}
+@mixin forms($bg-color, $font-size, $width, $height){
+    background-color:$bg-color;
+    font-size: $font-size;
+    width: $width;
+    height: $height;
+}
+@mixin formito($display, $direction, $align-items, $gap){
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align-items;
+    gap: $gap;
+}
+@mixin pre-footer($display, $column, $row, $gap, $top, $bottom){
+    display: $display;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    row-gap: $gap;
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin img-fixed($width, $alto){
+    width: $width;
+    height: $alto;
+}
+
+@mixin U-L($display, $column, $gap, $items, $top, $size, $decoration, $style){
+    display: $display;
+    flex-direction: $column;
+    gap: $gap;
+    align-items: $items;
+    margin-top: $top;
+    font-size: $size;
+    text-decoration: $decoration;
+    list-style: $style;
+}
+
+@mixin sec-div($flex, $row, $gap, $content, $padding){
+    display: $flex;
+    flex-direction: $row;
+    gap: $gap;
+    justify-content: $content;
+    padding: $padding;
+}
+

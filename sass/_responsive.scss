@@ -1,0 +1,94 @@
+@use'extend';
+@use'mixin';
+@use'variable';
+
+@media (min-width:600px){
+    
+    //estilos-main -ofertas-inicio-vestidos
+    main{
+        section{
+            .box{
+                @include box(grid, repeat(2, 1fr), repeat(6,1fr), 20px, 20px, $decoration);
+            }
+        }
+
+    }
+//preguntas frecuentes-main
+.PregFrec{
+align-items: $p-item;
+            div{
+            width: $wh;
+            font-size: $fe;
+        }
+}
+
+//contacto-main
+.sec{
+    grid-template-columns: $column;
+    grid-template-rows: $rows;
+    column-gap: $gap;
+    margin-left: $margin;
+    justify-items:$j-items;
+}
+//pre-footer
+.strong{
+    @include pre-footer(grid,repeat(3, 1fr), 1fr, 0, 2%, 3%);
+    column-gap: $c-gap;
+}
+
+//footer
+footer{
+    grid-template-columns: $f-column;
+    grid-template-rows: $f-rows;
+section{
+            ul{
+                font-size: $right;
+                margin-top: $f-top;
+            }
+        }
+        section{
+            div{
+                margin-top: $margin;
+                h3{
+                    font-size: $f-size;
+
+                }
+        }
+
+.ubi{
+    div{
+        @include formito(flex, column, center, 5px);
+        padding: $left;
+        h4{
+            font-size: $f-size;
+        }
+    }
+
+}
+        }
+}
+
+@media (min-width: 1024px){
+    //estilos-main
+    main{
+        section{
+                .box{
+                    @include box(grid, repeat(4, 1fr), repeat(3, 1fr), 20px, 20px, 2%);
+
+            }
+        }
+    }
+}
+//preguntas frecuentes
+main{
+    .PregFrec{
+        align-items: $p-item;
+                div{
+                    width: $whdos;
+            }
+    }
+
+}
+}
+
+

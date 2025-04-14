@@ -1,0 +1,46 @@
+@import'sass/mixin';
+@import'sass/extend';
+@import'sass/variable';
+@import'sass/main';
+@import'sass/footer';
+@import'sass/reset';
+@import'sass/responsive';
+
+//banner
+
+.BannerCitoVesti{
+    @extend .BannerCito;
+    div{
+        img{
+            @extend .PortadasImg;
+            
+        }
+    }
+}
+.ofertita{
+    @extend .BannerCito;
+    div{
+        img{
+            @extend .PortadasImg;
+            
+        }
+    }
+}
+.banner_cito{
+    @extend .BannerCito;
+    div{
+        img{
+            @extend .PortadasImg;
+            
+        }
+    }
+}
+.preguntas {
+    img{
+        @include medidas(100%, auto, block);
+    }
+}
+
+
+
+

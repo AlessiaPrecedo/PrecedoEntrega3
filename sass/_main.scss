@@ -1,0 +1,104 @@
+@use'mixin';
+@use'extend';
+@use'variable';
+
+
+
+//index - vestidos - ofertas
+
+main{
+    @extend .main-grid;
+    section{
+        h3{
+            @extend .h;
+        }
+    }
+    section{
+            .box{
+                @include box(grid, 1fr, 12fr, 0, 10px, 3%);
+                @extend .suave;
+                    div{ 
+                        @extend .box-div;
+                        @extend .suave;
+                }
+        }
+    }
+}
+
+//contacto-main
+
+//primer forms
+.sec{ 
+    @extend .contacto;
+    @extend .suave;
+    .uno{
+        @include forms( rgb(226, 184, 184), 1em, 300px, 550px);
+        margin-left: $f-size;
+        h3{
+        @extend .h;
+        }
+        div{
+            form{
+                @include formito(flex, column, center, 4px);
+
+            }
+        }
+    
+    }
+ //segundo forms
+.dos{
+    @include forms ( rgb(226, 184, 184), 1em, 300px, 250px);
+    margin-left: $fe;
+    h4{
+        @extend.h;
+    }
+    div{
+        form{
+            @include formito( flex, column, center, 5px);
+            }
+        }
+    }
+}
+
+//main-preguntas-frecuentes
+
+main{
+    .PregFrec{
+            @extend .preguntita;
+            @extend .suave;
+            div{
+                width: $ancho;
+                font-size: $fuente;
+            }
+    }
+
+}
+ //pre-footer
+.strong{
+@include pre-footer (grid, 1fr, repeat(3, 1fr), 5px, 3%, 3%);
+div{
+    @include formito(flex,column, center, 10px);
+}
+}
+//WhatsApp-top
+.wharap-scroll{
+@extend .scroll-wharap;
+            div{
+                a{
+                    display: $display;
+                    img{
+                        width: $icon-size;
+                        height: $icon-size;
+                    }
+                }
+            }
+}
+
+
+
+
+
+
+
+
+
