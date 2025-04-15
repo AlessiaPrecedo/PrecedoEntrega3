@@ -1,3 +1,13 @@
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .PortadasImg, .banner_cito div img, .ofertita div img, .BannerCitoVesti div img {
   width: 100%;
   height: 100%;
@@ -78,6 +88,24 @@
   transition: box-shadow 0.3s ease;
 }
 
+.Ubicacion, footer .ubi div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 5px;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .PortadasImg, .banner_cito div img, .ofertita div img, .BannerCitoVesti div img {
   width: 100%;
   height: 100%;
@@ -158,6 +186,17 @@
   transition: box-shadow 0.3s ease;
 }
 
+.Ubicacion, footer .ubi div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 5px;
+}
+
+main section h3 {
+  animation: FadeIn 3s ease 0.3s both;
+}
 main section .box {
   display: grid;
   grid-template-columns: 1fr;
@@ -173,6 +212,9 @@ main section .box {
   height: 550px;
   margin-left: 15px;
 }
+.sec .uno h3 {
+  animation: FadeIn 3s ease 0.5s both;
+}
 .sec .uno div form {
   display: flex;
   flex-direction: column;
@@ -185,6 +227,9 @@ main section .box {
   width: 300px;
   height: 250px;
   margin-left: 20px;
+}
+.sec .dos h4 {
+  animation: FadeIn 3s ease 0.5s both;
 }
 .sec .dos div form {
   display: flex;
@@ -221,6 +266,16 @@ main .PregFrec div {
   height: 50px;
 }
 
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .PortadasImg, .banner_cito div img, .ofertita div img, .BannerCitoVesti div img {
   width: 100%;
   height: 100%;
@@ -301,6 +356,14 @@ main .PregFrec div {
   transition: box-shadow 0.3s ease;
 }
 
+.Ubicacion, footer .ubi div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 5px;
+}
+
 footer section ul {
   display: flex;
   flex-direction: column;
@@ -324,13 +387,6 @@ footer section div {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  justify-content: center;
-  padding: 5px;
-}
-footer .ubi {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
   justify-content: center;
   padding: 5px;
 }
@@ -424,6 +480,24 @@ footer .ubi div h4 {
   transition: box-shadow 0.3s ease;
 }
 
+.Ubicacion, footer .ubi div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 5px;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media (min-width: 600px) {
   main section .box {
     display: grid;

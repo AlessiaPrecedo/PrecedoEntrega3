@@ -11,6 +11,7 @@ main{
     section{
         h3{
             @extend .h;
+            @include FadeIn(3s, 0.3s);
         }
     }
     section{
@@ -36,6 +37,7 @@ main{
         margin-left: $f-size;
         h3{
         @extend .h;
+        @include FadeIn(3s, 0.5s);
         }
         div{
             form{
@@ -51,6 +53,7 @@ main{
     margin-left: $fe;
     h4{
         @extend.h;
+        @include FadeIn(3s, 0.5s);
     }
     div{
         form{

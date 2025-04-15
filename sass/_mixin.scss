@@ -54,4 +54,11 @@
     justify-content: $content;
     padding: $padding;
 }
+@mixin FadeIn($duracion, $delay){
+    animation: FadeIn $duracion ease $delay both;
+}
+@keyframes FadeIn{
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 

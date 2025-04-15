@@ -13,11 +13,11 @@ footer{
             @include U-L(flex, column, 3px, center, 3%, 1.5em, none, none);
         }
         ul{
-            li{
+            li{                                              //seccion lista-menu
                 a{
                     border-style: $groove;
                     background-color: $background;
-                    text-decoration: $decoration;
+                    text-decoration: $decoration;                  
                     color: $color;
                 }
             }
@@ -27,17 +27,19 @@ footer{
                 div{
                     h3{
                         font-size: $h-tres;
-                    }
+                    }                                          //seccion-redes
                 }
 
             div{
-                @include sec-div(flex, row, 10px, center, 5px);
+                @include sec-div(flex, row, 10px, center, 5px);          
             }
         }
         .ubi{
-            @include sec-div(flex, column, 5px, center, 5px);
             div{
-                h4{
+                @extend .Ubicacion;
+                
+                h4{                              
+                                                               //seccion ubicacion
                     font-size: $h-tres;
                 }
 
