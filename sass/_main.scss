@@ -98,9 +98,6 @@ main{
 @include pre-footer (grid, 1fr, repeat(3, 1fr), 5px, 3%, 3%);
 div{
     @include formito(flex,column, center, 10px,);
-    img{
-        @extend
-    }
     
 
 }
