@@ -21,10 +21,27 @@ main{
                     div{ 
                         @extend .box-div;
                         @extend .suave;
-                }
+                        img{
+                            @include image(250px, 333px, cover);
+                        }
+                    }
         }
     }
+    .strong{
+        div{
+                .pay{
+                    width: $redes;
+                    height: $redes;
+                }
+                .candado{
+                    width: $candado;
+                    height: $candado;
+                }
+        }
+
+    }
 }
+
 
 //contacto-main
 
@@ -80,7 +97,12 @@ main{
 .strong{
 @include pre-footer (grid, 1fr, repeat(3, 1fr), 5px, 3%, 3%);
 div{
-    @include formito(flex,column, center, 10px);
+    @include formito(flex,column, center, 10px,);
+    img{
+        @extend .medida;
+    }
+    
+
 }
 }
 //WhatsApp-top

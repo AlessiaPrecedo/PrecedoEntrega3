@@ -15,8 +15,7 @@ footer{
         ul{
             li{                                              //seccion lista-menu
                 a{
-                    border-style: $groove;
-                    background-color: $background;
+                    font-size: $f-size;
                     text-decoration: $decoration;                  
                     color: $color;
                 }
@@ -27,7 +26,12 @@ footer{
                 div{
                     h3{
                         font-size: $h-tres;
-                    }                                          //seccion-redes
+                    } 
+                    img{
+                        width: $redes;
+                        height: $redes;
+                        
+                    }                                         //seccion-redes
                 }
 
             div{

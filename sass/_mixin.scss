@@ -11,6 +11,11 @@
     row-gap: $row-gap;
     padding: $padding;
 }
+@mixin image($dos, $tres, $objet){
+    width: $dos;
+    height: $tres;
+    object-fit: $objet;
+}
 @mixin forms($bg-color, $font-size, $width, $height){
     background-color:$bg-color;
     font-size: $font-size;
@@ -40,7 +45,7 @@
     display: $display;
     flex-direction: $column;
     gap: $gap;
-    align-items: $items;
+    align-items:$items;
     margin-top: $top;
     font-size: $size;
     text-decoration: $decoration;
@@ -61,4 +66,4 @@
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
+ 

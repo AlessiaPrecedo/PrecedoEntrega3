@@ -95,6 +95,11 @@
   padding: 5px;
 }
 
+.medida, .strong div img {
+  width: 30px;
+  height: 30px;
+}
+
 @keyframes FadeIn {
   from {
     opacity: 0;
@@ -192,6 +197,11 @@
   padding: 5px;
 }
 
+.medida, .strong div img {
+  width: 30px;
+  height: 30px;
+}
+
 main section h3 {
   animation: FadeIn 3s ease 0.3s both;
 }
@@ -203,6 +213,20 @@ main section .box {
   row-gap: 10px;
   padding: 3%;
 }
+main section .box div img {
+  width: 250px;
+  height: 333px;
+  object-fit: cover;
+}
+main .strong div .pay {
+  width: 30px;
+  height: 30px;
+}
+main .strong div .candado {
+  width: 28px;
+  height: 28px;
+}
+
 .sec .uno {
   background-color: rgb(226, 184, 184);
   font-size: 1em;
@@ -255,7 +279,6 @@ main .PregFrec div {
   align-items: center;
   gap: 10px;
 }
-
 .wharap-scroll div a {
   display: inline-block;
 }
@@ -361,6 +384,11 @@ main .PregFrec div {
   padding: 5px;
 }
 
+.medida, .strong div img {
+  width: 30px;
+  height: 30px;
+}
+
 footer section ul {
   display: flex;
   flex-direction: column;
@@ -372,13 +400,16 @@ footer section ul {
   list-style: none;
 }
 footer section ul li a {
-  border-style: groove;
-  background-color: rgb(225, 218, 223);
+  font-size: 15px;
   text-decoration: none;
   color: #000;
 }
 footer section div h3 {
   font-size: 1.5rem;
+}
+footer section div img {
+  width: 30px;
+  height: 30px;
 }
 footer section div {
   display: flex;
@@ -482,6 +513,11 @@ footer .ubi div h4 {
   gap: 5px;
   align-items: center;
   padding: 5px;
+}
+
+.medida, .strong div img {
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes FadeIn {
