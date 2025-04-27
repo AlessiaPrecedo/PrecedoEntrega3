@@ -99,7 +99,7 @@ main{
 div{
     @include formito(flex,column, center, 10px,);
     img{
-        @extend .medida;
+        @extend
     }
     
 
